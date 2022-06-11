@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_img"></ImageView>
+
+    <ImageView
+        android:id="@+id/img_logout"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="end"
+        android:src="@drawable/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:src="@drawable/back_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logout"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/img_profile"
+        app:layout_constraintStart_toStartOf="@id/img_profile"
+        app:layout_constraintEnd_toEndOf="@id/img_profile">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="5dp"
+            android:hint="First Name"
+            android:textColorHint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_fname"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="5dp"
+            android:hint="Last Name"
+            android:textColorHint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_lname"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintStart_toStartOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@id/linearLayout"
+        android:layout_marginLeft="5dp"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:textStyle="bold"
+            android:textColorHint="@color/white"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout3"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toStartOf="@id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout2"
+        app:layout_constraintEnd_toEndOf="@id/textInputLayout2"
+        android:padding="10dp"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_contactNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_gotoList"
+        android:layout_width="372dp"
+        android:layout_height="44dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="15dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout5"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Go To List"
+            android:textColor="@color/black"
+            android:textSize="18dp"></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/showGoToList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_cornet_drawable"
+        android:textColor="@color/btn_color"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="Show Go To List"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout5"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"></TextView>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_cornet_drawable"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/showGoToList"
+        app:layout_constraintTop_toBottomOf="@+id/showGoToList">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Dark Mode"
+            android:textColor="@color/btn_color"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/darkModeSwitch"
+            android:gravity="center_vertical"></Switch>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_updateAccountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_btn"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/update_account"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

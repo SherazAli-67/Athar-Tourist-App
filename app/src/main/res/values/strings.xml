@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ATHAR_أثر</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="update_account">Update Account</string>
+    <string name="sign_in">Sign In</string>\
+    <string name="explore_riyadh">Explore Riyadh!</string>
+    <string name="already_have_account">Already have an account? Sign in</string>
+    <string name="dontHaveAccount">Don\'t have account? Create here</string>
+
+    <string name="boulevard_city_title">Boulevard Riyadh City</string>
+    <string name="boulevard_city_description">Boulevard Riyadh City is one of the biggest  entertainment zones. each of the sub-areas features its own set of activities, restaurants, events, and outlets that are catered to all visitor.</string>
+    <string name="king_fahad_lib_title">The King Fahad National Library</string>
+    <string name="king_fahad_lib_description">The King Fahad National Library represents the new centre of the rapidly changing Olaya District, and stands out clearly from the heterogeneous existing building pattern.</string>
+    <string name="riyadh_zoo_title">Riyadh Zoo</string>
+    <string name="riyadh_zoo_description">Riyadh Zoo is located in Almalaz District, Riyadh, Kingdom of Saudi Arabia. It was originally built in 1987 with total area 161,000 m2 , featuring more than 190 kind of animals with three major types, Mammals, Birds and Reptiles, train rides and tour, Restaurant, coffee shop which contains an outdoor setting area, 6 snacks Kiosks, outdoor plaza, prayer halls for both male and female, 10 Toilets, Romanian Theater, Gifts shop, 5D Cinema, Conservation Center, Main fountain and more than 20,000 assorted trees and flowers.</string>
+    <string name="national_muesam_park_title">The National Museum Park</string>
+    <string name="national_muesam_park_description">The National Museum of Saudi Arabia is a major national museum in Riyadh, Saudi Arabia. it is part of the King Abdulaziz Historical Centre in Riyadh.</string>
+    <string name="al_masmak_palace_musem_title">Al Masmak Palace Museum</string>
+    <string name="al_masmak_palace_musem_description">A vast clay and mud-brick citadel that witnessed the birth of a kingdom, Al Masmak — the word means a high, strong and thick building — serves as a proud reminder of Saudi Arabia’s storied history.</string>
+    <string name="murabba_historic_palace_title">Murabba Historical Palace</string>
+    <string name="murabba_historic_palace_description">Close to Riyadh’s National Museum you’ll find the beautiful Murabba Palace, the former home and court of King Abdul Aziz, founder of modern Saudi Arabia, and a monument to the city’s captivating past.</string>
+    <string name="title_activity_place_detail">PlaceDetailActivity</string>
+    <string name="title_activity_place_information">PlaceInformationActivity</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="update_password">Update Password</string>
+    <string name="search">Search</string>
+
+</resources>
